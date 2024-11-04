@@ -1,1 +1,1 @@
-https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fsearch%2Fcat-playing-piano-gifs&psig=AOvVaw0gpSb9Q3uJWHunrAANVKP1&ust=1730815100239000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKD50OvqwokDFQAAAAAdAAAAABAE
+![cat-piano](https://github.com/user-attachments/assets/bb1478c3-cb3f-4cc0-89e6-38b70f9c5876)
