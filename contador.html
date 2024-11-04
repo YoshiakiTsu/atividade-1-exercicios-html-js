@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador Simples</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            transition: background-color 0.3s;
+        }
+        #contador {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        button {
+            font-size: 24px;
+            margin: 5px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="contador">0</div>
+    <button onclick="incrementar()">+</button>
+    <button onclick="decrementar()">-</button>
+    <input type="color" id="colorPicker" onchange="changeBackgroundColor(this.value)">
+
+    <script>
+        let valor = 0;
+
+        function atualizarContador() {
+            document.getElementById('contador').innerText = valor;
+        }
+
+        function incrementar() {
+            valor++;
+            atualizarContador();
+        }
+
+        function decrementar() {
+            valor--;
+            atualizarContador();
+        }
+
+        function changeBackgroundColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+    </script>
+
+</body>
+</html>
