@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoshi´s Works</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e9ecef;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            margin: 0 15px;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #007bff;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background: #007bff;
+            color: white;
+        }
+        .content {
+            padding: 20px;
+            background: white;
+            max-width: 800px;
+            margin: 20px auto;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s, color 0.3s;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background: #007bff;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Modo Escuro */
+        body.dark {
+            background-color: #333;
+            color: #e9ecef;
+        }
+        header.dark {
+            background: #444;
+        }
+        nav.dark {
+            background: #555;
+        }
+        nav a.dark {
+            color: #e9ecef;
+        }
+        nav a.dark:hover {
+            background: #007bff;
+        }
+        .content.dark {
+            background: #444;
+        }
+        footer.dark {
+            background: #444;
+        }
+        .toggle-button {
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            color: white;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        .toggle-button:hover {
+            color: #ffdd57;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Yoshi´s Works</h1>
+        <button class="toggle-button" id="toggleMode"><i class="fas fa-lightbulb"></i></button>
+    </header>
+    
+    <nav>
+        <a href="contador.html">contador</a>
+        <a href="tela de login.html">Tela de Login</a>
+        <a href="pedra_papel_tesoura.html">Jokenpô</a>
+    </nav>
+    
+    <div class="content">
+        <h2>Bem-vindo!</h2>
+        <p>Este é o meu index de Projetos!</p>
+        <p>Explore o site através do menu acima para acessar diferentes seções.</p>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Leonam Tsutsumi | Todos os direitos reservados.</p>
+    </footer>
+    
+
+<script>
+    const toggleButton = document.getElementById('toggleMode');
+    const body = document.body;
+    const header = document.querySelector('header');
+    const nav = document.querySelector('nav');
+    const content = document.querySelector('.content');
+    const footer = document.querySelector('footer');
+
+    toggleButton.addEventListener('click', () => {
+        body.classList.toggle('dark');
+        header.classList.toggle('dark');
+        nav.classList.toggle('dark');
+        content.classList.toggle('dark');
+        footer.classList.toggle('dark');
+
+        // Troca o ícone do botão
+        const icon = body.classList.contains('dark') ? 'fas fa-sun' : 'fas fa-lightbulb';
+        toggleButton.innerHTML = `<i class="${icon}"></i>`;
+    });
+</script>
+
+</body>
+</html>
